@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>The Fade Out</title>
   <style>
     body {
-      background-color: #111;
-      color: #fff;
-      font-family: 'Helvetica Neue', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
+      font-family: Arial, sans-serif;
       text-align: center;
+      margin: 40px;
+      background-color: #f8f8f8;
     }
     h1 {
       font-size: 3em;
-      margin-bottom: 0.5em;
+      margin-bottom: 40px;
     }
-    a {
-      font-size: 1.5em;
-      color: #f86;
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    a.button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: white;
+      background-color: #333;
       text-decoration: none;
-      border: 2px solid #f86;
-      padding: 0.5em 1em;
-      border-radius: 8px;
-      transition: 0.3s;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
     }
-    a:hover {
-      background-color: #f86;
-      color: #000;
+    a.button:hover {
+      background-color: #555;
     }
   </style>
 </head>
 <body>
+
   <h1>The Fade Out</h1>
-  <a href="Fade_01.html">Part 01</a>
+
+  <div class="button-container">
+    <a href="Fade_01.html" class="button">Page 01</a>
+    <a href="Fade_02.html" class="button">Page 02</a>
+  </div>
+
 </body>
 </html>

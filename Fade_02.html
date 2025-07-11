@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fade 02</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .image-container {
+      width: 100%;
+      max-width: 602px;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: white;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    }
+    .image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Image list -->
+  <div id="gallery"></div>
+
+  <script>
+    const imageCount = 56;
+    const folder = "pages/fade01/";
+    const gallery = document.getElementById("gallery");
+
+    for (let i = 1; i <= imageCount; i++) {
+      const filename = String(i).padStart(3, '0') + ".png";
+      const container = document.createElement("div");
+      container.className = "image-container";
+
+      const img = document.createElement("img");
+      img.src = folder + filename;
+      img.alt = "Page " + i;
+
+      container.appendChild(img);
+      gallery.appendChild(container);
+    }
+  </script>
+</body>
+</html>

@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Fade Out</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      font-family: 'Helvetica Neue', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
       text-align: center;
-      margin: 40px;
-      background-color: #f8f8f8;
     }
     h1 {
       font-size: 3em;
-      margin-bottom: 40px;
+      margin-bottom: 0.2em;
     }
-    .button-container {
+    p {
+      font-size: 1.2em;
+      margin-top: 0;
+      margin-bottom: 2em;
+      color: #ccc;
+    }
+    .buttons {
       display: flex;
       flex-direction: column;
       gap: 20px;
-      align-items: center;
     }
-    a.button {
-      display: inline-block;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      color: white;
-      background-color: #333;
+    a {
+      font-size: 1.5em;
+      color: #f86;
       text-decoration: none;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
+      border: 2px solid #f86;
+      padding: 0.5em 1.2em;
+      border-radius: 8px;
+      transition: 0.3s;
     }
-    a.button:hover {
-      background-color: #555;
+    a:hover {
+      background-color: #f86;
+      color: #000;
     }
   </style>
 </head>
 <body>
-
   <h1>The Fade Out</h1>
-
-  <div class="button-container">
-    <a href="Fade_01.html" class="button">Part 01</a>
-    <a href="Fade_02.html" class="button">Part 02</a>
+  <p>Mergers and acquisitions. Finance and consulting.<br>M&A, Investment and Corporate Finance</p>
+  <div class="buttons">
+    <a href="Fade_01.html">Part 01</a>
+    <a href="Fade_02.html">Part 02</a>
   </div>
-
 </body>
 </html>
